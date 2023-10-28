@@ -6,8 +6,8 @@
   "manifest_version": 3,
   "content_scripts": [
     {
-      "matches": ["*://*/*"],
-      "js": ["content.js"]
+      "matches": ["*://*/*"]
+      //   "js": ["../src/content.tsx"]
     }
   ],
 
@@ -23,5 +23,4 @@
     "default_title": "Unicode Extensions",
     "default_popup": "index.html"
   }
-  
 }
