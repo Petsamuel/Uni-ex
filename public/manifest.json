@@ -3,5 +3,25 @@
   "version": "1.0",
   "description": "Basic unicode extension for Browsers.",
   "author": "Bieefilled",
-  "manifest_version": 3
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+
+  "action": {
+    "default_icon": {
+      "16": "vite.svg",
+      "32": "vite.svg",
+      "48": "vite.svg",
+      "128": "vite.svg"
+    },
+    "default_title": "Unicode Extensions",
+    "default_popup": "index.html"
+  }
+  
 }
