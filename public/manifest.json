@@ -4,20 +4,21 @@
   "description": "Basic unicode extension for Browsers.",
   "author": "Bieefilled",
   "manifest_version": 3,
-  //   "background": {
-  //     "service_worker": "../src/content.tsx",
-  //     "type": "module"
-  //   },
-  "hosted_permission": ["https://*/*", "http://*/*", "localhost:*/*"],
+ 
 
   "permissions": ["activeTab", "scripting"],
-
+  "icons": {
+    "16": "diamonds.png",
+    "32": "diamonds.png",
+    "48": "diamonds.png",
+    "128": "diamonds.png"
+  },
   "action": {
     "default_icon": {
-      "16": "vite.svg",
-      "32": "vite.svg",
-      "48": "vite.svg",
-      "128": "vite.svg"
+      "16": "diamonds.png",
+      "32": "diamonds.png",
+      "48": "diamonds.png",
+      "128": "diamonds.png"
     },
     "default_title": "Unicode Extensions",
     "default_popup": "index.html"
