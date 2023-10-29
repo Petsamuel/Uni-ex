@@ -4,10 +4,11 @@
   "description": "Basic unicode extension for Browsers.",
   "author": "Bieefilled",
   "manifest_version": 3,
-  "background": {
-    "service_worker": "../src/content.tsx",
-    "type": "module"
-  },
+  //   "background": {
+  //     "service_worker": "../src/content.tsx",
+  //     "type": "module"
+  //   },
+  "hosted_permission": ["https://*/*", "http://*/*", "localhost:*/*"],
 
   "permissions": ["activeTab", "scripting"],
 
