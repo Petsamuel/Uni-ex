@@ -4,7 +4,6 @@
   "description": "Basic unicode extension for Browsers.",
   "author": "Bieefilled",
   "manifest_version": 3,
- 
 
   "permissions": ["activeTab", "scripting"],
   "icons": {
@@ -21,6 +20,9 @@
       "128": "diamonds.png"
     },
     "default_title": "Unicode Extensions",
-    "default_popup": "index.html"
+    "default_popup": "index.html",
+    "background": {
+      "service_worker": "service-worker.tsx"
+    }
   }
 }

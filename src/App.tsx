@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="app w-[560px] md:w-full lg:w-full flex flex-col gap-5 items-center">
       <Header />
-      <main className=" pt-5 flex flex-col lg:w-3/6 w-full h-[50vh] ">
+      <main className=" lg:pt-5 pt-2 flex flex-col lg:w-3/6 w-full h-[50vh] ">
         <UserInput />
       </main>
       <Footer />

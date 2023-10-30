@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <div className="mt-6 relative flex justify-center text-center items-center w-max">
-      <p className=" absolute  w-max text-center bottom-2">&copy; 2023</p>
+    <div className=" absolute mt-6 flex justify-center text-center items-center w-max bottom-0 text-black">
+      <p className=" relative w-max text-center bottom-2">&copy; 2023</p>
     </div>
   );
 };

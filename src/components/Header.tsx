@@ -16,7 +16,7 @@ const Header = () => {
         <div className="description ">unicode extension</div>
         <div className="icons flex   items-center gap-4">
           <a
-            href="#"
+            href="https://github.com/petsamuel/uni-ex"
             className="text-white flex gap-1 ring-2 p-3  rounded-xl transition-all ease-in-out  hover:scale-95 active:scale-90"
           >
             {" "}
@@ -25,7 +25,7 @@ const Header = () => {
           </a>
 
           <a
-            href="#"
+            href="https://buymeacoffee.com/bieefilled"
             className="text-white flex gap-1 ring-2 p-3 rounded-xl transition-all ease-in-out  hover:scale-95 active:scale-90"
           >
             Support{" "}

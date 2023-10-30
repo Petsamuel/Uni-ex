@@ -4,6 +4,13 @@ import { RxClipboardCopy } from "react-icons/rx";
 export const UserInput = () => {
   const [value, setValue] = useState("");
 
+  const handleClick = () => {
+    chrome.runtime.sendMessage({ action: "callAPI" }, (response) => {
+      // Handle the response from the background script here
+      console.log(response);
+    });
+  };
+
   const SubmitForm = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
   };
@@ -37,6 +44,9 @@ export const UserInput = () => {
         ></textarea>
         <span className=" w-full relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 my-3 overflow-hidden text-md font-medium text-gray-900 rounded-lg cursor-pointer group bg-gradient-to-br from-pink-600 to-amber-500 group-hover:from-pink-600 group-hover:to-amber-500 bg-[#242424] focus:ring-2 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-sm">
           <input
+            onClick={() => {
+              handleClick();
+            }}
             type="submit"
             value="Convert Text"
             className=" cursor-pointer text-xl w-full relative px-5 py-2.5 transition-all ease-in duration-75 bg-[#242424] rounded-md group-hover:bg-opacity-0 text-white justify"
