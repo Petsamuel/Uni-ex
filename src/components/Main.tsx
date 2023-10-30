@@ -26,7 +26,7 @@ export const UserInput = () => {
   };
 
   return (
-    <div className="m-5 h-full">
+    <div className="m-5 h-full mb-5">
       <form className="flex flex-col " onSubmit={SubmitForm}>
         <label
           htmlFor="message"
@@ -62,8 +62,8 @@ export const UserInput = () => {
             }}
             className=" relative cursor-pointer flex flex-wrap  line-break bg-white rounded-sm p-3 md:p-4 text-black transition-all ease-in-out  hover:scale-95 active:scale-90 break-all overflow-y-auto"
           >
-            {value}{" "}
-            <span className="pl-4 absolute right-2 text-black font-bold z-20 ">
+            <span className="mr-3">{value}</span>
+            <span className=" absolute right-0 text-black font-bold z-20 ">
               <RxClipboardCopy className="text-xl" />
             </span>
           </li>

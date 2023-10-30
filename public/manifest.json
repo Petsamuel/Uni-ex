@@ -22,7 +22,7 @@
     "default_title": "Unicode Extensions",
     "default_popup": "index.html",
     "background": {
-      "service_worker": "service-worker.tsx"
+      "service_worker": "../src/service-worker.ts"
     }
   }
 }
