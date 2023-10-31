@@ -9,20 +9,20 @@ if ("serviceWorker" in navigator) {
     });
 }
 
-chrome.runtime.onMessage.addListener((request, _, sendResponse) => {
-  if (request.action === "callAPI") {
+self.addEventListener("message", (event) => {
+  if (event.data.action === "callAPI") {
+    console.log("entering....");
     // Make the API call here
     fetch("https://api.quotable.io/quotes/random?limit=3")
       .then((response) => response.json())
       .then((data) => {
-        sendResponse(data);
+        event.source.postMessage(data);
       })
       .catch((error) => {
         console.error(error);
       });
-    // Return true to indicate that you're sending a response asynchronously
-    return true;
   } else {
-    sendResponse("failed");
+    event.source.postMessage("failed");
+    console.log("exiting...");
   }
 });
