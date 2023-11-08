@@ -7,22 +7,22 @@
 
   "permissions": ["activeTab", "scripting"],
   "icons": {
-    "16": "diamonds.png",
-    "32": "diamonds.png",
-    "48": "diamonds.png",
-    "128": "diamonds.png"
+    "16": "./styles/images/diamonds.png",
+    "32": "./styles/images/diamonds.png",
+    "48": "./styles/images/diamonds.png",
+    "128": "./styles/images/diamonds.png"
   },
   "action": {
     "default_icon": {
-      "16": "diamonds.png",
-      "32": "diamonds.png",
-      "48": "diamonds.png",
-      "128": "diamonds.png"
+      "16": "./styles/images/diamonds.png",
+      "32": "./styles/images/diamonds.png",
+      "48": "./styles/images/diamonds.png",
+      "128": "./styles/images/diamonds.png"
     },
     "default_title": "Unicode Extensions",
     "default_popup": "index.html",
     "background": {
-      "service_worker": "../src/background/service-worker.js"
+      "service_worker": "index.js"
     }
   }
 }
