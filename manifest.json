@@ -20,9 +20,9 @@
       "128": "./styles/images/diamonds.png"
     },
     "default_title": "Unicode Extensions",
-    "default_popup": "index.html",
+    "default_popup": "./popup/popup.html",
     "background": {
-      "service_worker": "index.js"
+      "service_worker": "background.js"
     }
   }
 }
